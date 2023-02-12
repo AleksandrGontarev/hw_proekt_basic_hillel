@@ -296,8 +296,12 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #F5F5FA;
+  /*background: rgba(245, 245, 250, 0.2);*/
+  /*dark*/
+  margin: 0 -15px;
+  padding: 0 15px;
 }
-
 .header-top__lang {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +369,9 @@ ul {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
   }
   .header-top__address, .header-top__tel, .header-top__icon-fb {
     display: -webkit-box;
@@ -380,6 +387,10 @@ ul {
     height: 6px;
     border-radius: 50%;
     background-color: #E6E6F0;
+  }
+  .header-logo__icon img {
+    width: 130px;
+    height: 60px;
   }
   .header-logo__about::before {
     width: 21px;
