@@ -1,0 +1,62 @@
+.about-img {
+    padding: 35px;
+    background-color: #4E4D79;
+    background-image: url(../img/team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    &__text {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        max-width: 328px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-img {
+        padding: 89px 0;
+
+        &__text {
+            font-size: 46px;
+            line-height: 56px;
+            letter-spacing: 63px;
+            max-width: 328px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-img {
+        padding: 103px 0;
+
+        &__text {
+            font-size: 86px;
+            line-height: 105px;
+            letter-spacing: 63px;
+            max-width: 448px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-img {
+        padding-top: 163px;
+        padding-bottom: 158px;
+
+        &__text {
+            font-size: 96px;
+            line-height: 117px;
+            letter-spacing: 63px;
+            max-width: 478px;
+        }
+    }
+}
