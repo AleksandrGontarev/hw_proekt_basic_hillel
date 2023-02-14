@@ -13,11 +13,12 @@
     font-weight: normal;
     font-style: normal;
     margin: 0 auto;
+    min-width: 345px;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1350px ;
+    max-width: 1350px;
     min-width: 345px;
     padding: 0 15px;
 }
@@ -38,4 +39,16 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+&:hover {
+    text-decoration: underline;
+ }
+}
+
+ul {
+list-style: none;
+padding-left: 0;
 }

@@ -1,0 +1,104 @@
+.about-midle {
+    display: grid;
+    padding: 33px 30px 60px 30px;
+
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+
+    &__header {
+        padding-top: 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $colorGradRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        /*text-fill-color: transparent;*/
+    }
+}
+
+@media (min-width: 768px) {
+    .about-midle {
+        padding: 60px;
+
+        &__text {
+            font-size: 19px;
+            line-height: 30px;
+
+            &--end {
+                padding-bottom: 0;
+            }
+        }
+
+        &__header {
+            font-size: 38px;
+            line-height: 46px;
+            padding-top: 0;
+
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-midle {
+        padding: 60px 0;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-rows: 1fr;
+
+        &__body {
+            max-width: 482px;
+        }
+
+        &__text {
+            font-size: 19px;
+            line-height: 30px;
+
+            &--end {
+                padding-bottom: 0;
+            }
+        }
+
+        &__header {
+            font-size: 38px;
+            line-height: 46px;
+            padding-top: 0;
+            max-width: 362px;
+
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-midle {
+        padding: 60px 120px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+
+        &__body {
+            max-width: 658px;
+        }
+
+        &__text {
+            font-size: 19px;
+            line-height: 30px;
+
+            &--end {
+                padding-bottom: 0;
+            }
+        }
+
+        &__header {
+            font-size: 38px;
+            line-height: 46px;
+            padding-top: 0;
+            max-width: 362px;
+
+        }
+    }
+}
