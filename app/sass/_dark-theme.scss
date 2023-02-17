@@ -28,3 +28,20 @@
     border-radius: 0 0 12px 12px;
     background: #E7E7F2;
 }
+
+
+@media (min-width: 768px) {
+    .gradient {
+        background-size: 894px 1024px, cover;
+    }
+}
+@media (min-width: 1024px) {
+    .gradient {
+        background-size: 670px 768px, cover;
+    }
+}
+@media (min-width: 1200px) {
+    .gradient {
+        background-size: 697px 799px, cover;
+    }
+}

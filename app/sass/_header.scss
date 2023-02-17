@@ -8,15 +8,15 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: min-content min-content;
+
 }
+
 
 .header-top {
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
     background-color: $colorBg;
-    /*background: rgba(245, 245, 250, 0.2);*/
-    /*dark*/
     margin: 0 -15px;
     padding: 10px 15px;
 
@@ -65,6 +65,15 @@
         padding-top: 5px;
     }
 
+
+    &--dark-theme {
+        background-color: rgba(245, 245, 250, 0.2);
+
+        a {
+            color: #FFFFFF;
+        }
+    }
+
 }
 
 .header-logo {
@@ -90,6 +99,12 @@
             margin-right: 5px;
         }
     }
+
+    &--dark-theme {
+        p {
+            display: none;
+        }
+    }
 }
 
 .header-menu {
@@ -109,6 +124,7 @@
             fill: #E6E6F0;
         }
     }
+
 }
 
 @media (min-width: 768px) {
@@ -122,7 +138,7 @@
     .header {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, min-content);
-        padding-top: 38px;
+        padding-top: 35px;
         padding-left: 45px;
     }
 
@@ -156,11 +172,23 @@
             color: $colorText;
         }
 
+        &--dark-theme {
+
+            p {
+
+                color: #FFFFFF;
+            }
+
+            svg .header-top__dark-fb {
+                fill: #FFFFFF;
+            }
+        }
+
     }
 
     .header-logo {
 
-        padding: 12px 0 30px 0;
+        padding: 12px 0 27px 0;
 
         &__icon {
             margin-right: 5px;
@@ -218,6 +246,12 @@
             text-decoration: none;
         }
 
+        &--dark-theme {
+            .header-menu__list-item {
+                color: #FFFFFF;
+            }
+        }
+
     }
 }
 
@@ -225,7 +259,7 @@
     .header {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(2, 1fr);
-        padding: 50px 0 0 0;
+        padding: 35px 45px;
     }
 
     .header-logo {
@@ -240,7 +274,6 @@
 
     .header-top {
         padding: 0;
-        padding-right: 90px;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         justify-content: flex-end;
@@ -257,10 +290,13 @@
         &__tel {
             padding-top: 0;
         }
+
+        &--dark-theme {}
     }
 
     .header-menu {
-        padding-right: 90px;
+        padding-top: 5px;
+
         &__list-item {
             margin-right: 0;
             margin-left: 14px;
@@ -270,10 +306,14 @@
             justify-content: flex-end;
         }
     }
-    
+
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
+    .header {
+        padding: 35px 0;
+        
+    }
 
     .header-top {
         padding-right: 0;
@@ -281,6 +321,6 @@
     }
 
     .header-menu {
-        padding-right: 0;
+        padding-top: 0;
     }
 }
