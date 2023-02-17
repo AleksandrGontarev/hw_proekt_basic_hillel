@@ -1,0 +1,30 @@
+.gradient {
+    background: url(../img/back-pic.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    background-repeat: no-repeat, repeat;
+    background-position: center top, center;
+    background-size: 524px 600px, cover;
+    position: relative;
+}
+
+.gradient::after {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    border-radius: 0 0 12px 12px;
+    background: #CACADB;
+}
+
+.gradient::before {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    border-radius: 0 0 12px 12px;
+    background: #E7E7F2;
+}

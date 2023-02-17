@@ -75,7 +75,6 @@
 
     &__about {
         display: flex;
-        align-items: center;
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
@@ -85,7 +84,7 @@
 
             content: '';
             background-image: url(../img/slash.svg);
-            width: 12px;
+            width: 14px;
             height: 26px;
             background-size: cover;
             margin-right: 5px;
@@ -123,8 +122,8 @@
     .header {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, min-content);
-        padding-top: 35px;
-        padding-left: 60px;
+        padding-top: 38px;
+        padding-left: 45px;
     }
 
     .header-top {
