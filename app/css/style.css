@@ -1047,12 +1047,22 @@ ul {
   border-radius: 50%;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
   margin: 0 auto;
   margin-bottom: 60px;
 }
 .index-top__header-btn svg {
   margin-top: 5px;
-  opacity: 0.5;
+  opacity: 1;
+}
+.index-top__header-btn:hover {
+  border: 2px solid rgba(240, 20, 90, 0.5);
+}
+.index-top__header-btn:hover svg {
+  opacity: 1;
+}
+.index-top__header-btn:hover svg path {
+  stroke: #F0145A;
 }
 
 @media (min-width: 768px) {
@@ -1109,7 +1119,7 @@ ul {
   text-decoration: none;
 }
 .index-tab__btn-active, .index-tab__btn:hover {
-  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1147,6 +1157,9 @@ ul {
   }
   .index-tab__content {
     padding: 60px 30px 0 30px;
+  }
+  .index-tab__content-text {
+    padding-bottom: 60px;
   }
   .index-tab__content-header {
     font-size: 30px;
@@ -1220,7 +1233,7 @@ ul {
   }
 }
 .services {
-  padding-bottom: 30px;
+  padding: 0 15px 30px 15px;
 }
 .services__head-link {
   font-weight: 700;
@@ -1285,5 +1298,186 @@ ul {
   line-height: 26px;
   color: #FFFFFF;
   padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .services {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .services__hider {
+    font-size: 38px;
+    line-height: 46px;
+    padding-bottom: 60px;
+  }
+  .services__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 60px;
+       -moz-column-gap: 60px;
+            column-gap: 60px;
+    row-gap: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .services {
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .services__items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .services {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.team {
+  margin-top: 50px;
+  padding: 0 15px;
+}
+.team__body {
+  display: none;
+}
+.team__body-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F5F5FA;
+  border-radius: 0 0 12px 12px;
+}
+.team__team-container {
+  padding: 28px 20px 0 30px;
+  word-wrap: break-word;
+  padding-bottom: 30px;
+}
+.team__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 315px;
+  min-height: 500px;
+  background-image: url(../img/man-with-glass.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  font-size: 0;
+}
+.team__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+.team__link::after {
+  content: "";
+  background-image: url(../img/arrow.svg);
+  background-position: center center;
+  padding-left: 10px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+.team__header {
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.team__name {
+  padding-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+}
+.team__position {
+  padding-top: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+.team__dots {
+  padding-top: 23px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team__dot {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  background-color: #24A3FF;
+  opacity: 0.2;
+  margin: 0 7px;
+  font-size: 0;
+}
+.team__dot-active {
+  background-color: #24A3FF;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .team {
+    margin-top: 80px;
+    padding: 0 45px;
+  }
+  .team__img {
+    min-width: 648px;
+    min-height: 500px;
+    background-image: url(../img/man-with-glass-tablet-sd.jpg);
+  }
+  .team__header {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+@media (min-width: 1024px) {
+  .team__header {
+    font-size: 37px;
+  }
+  .team__body-active {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .team__img {
+    min-width: 400px;
+    min-height: 528px;
+    background-image: url(../img/man-with-glass-tablet-hd.jpg);
+  }
+  .team__team-container {
+    padding: 30px 30px 0 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .team {
+    padding: 0;
+  }
+  .team__body-active {
+    grid-template-columns: 1fr 3fr;
+  }
+  .team__img {
+    min-width: 400px;
+    min-height: 344px;
+    background-image: url(../img/man-with-glass-desktop.jpg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

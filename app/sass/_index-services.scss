@@ -1,5 +1,5 @@
 .services {
-    padding-bottom: 30px;
+    padding: 0 15px 30px 15px;
 
     &__head-link {
         font-weight: 700;
@@ -7,7 +7,7 @@
         line-height: 17px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #24A3FF;
+        color: $colorRegular;
         display: flex;
         padding-bottom: 10px;
     }
@@ -23,7 +23,7 @@
         font-weight: 700;
         font-size: 30px;
         line-height: 37px;
-        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        background: $colorGradRedText;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -46,7 +46,7 @@
         font-weight: 700;
         font-size: 22px;
         line-height: 27px;
-        color: #24A3FF;
+        color: $colorRegular;
         padding-bottom: 15px;
     }
 
@@ -60,4 +60,42 @@
         padding-bottom: 30px;
     }
 
+}
+
+@media (min-width: 768px) {
+    .services {
+        padding-left: 45px;
+        padding-right: 45px;
+
+        &__hider {
+            font-size: 38px;
+            line-height: 46px;
+            padding-bottom: 60px;
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 60px;
+            row-gap: 30px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .services {
+        padding-top: 60px;
+        padding-left: 50px;
+        padding-right: 50px;
+        &__items {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .services {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
