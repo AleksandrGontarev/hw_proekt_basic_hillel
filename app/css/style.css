@@ -1430,7 +1430,7 @@ ul {
   margin: 0 7px;
   font-size: 0;
 }
-.team__dot-active {
+.team__dot-active, .team__dot-active:hover {
   background-color: #24A3FF;
   opacity: 1;
 }
@@ -1478,6 +1478,89 @@ ul {
     min-width: 400px;
     min-height: 344px;
     background-image: url(../img/man-with-glass-desktop.jpg);
+  }
+}
+.company__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.company__items {
+  display: grid;
+  grid-template-rows: repeat(6, minmax(120px, 1fr));
+  grid-template-columns: 1fr;
+}
+.company__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.company__items .company__item:nth-of-type(n+7) {
+  display: none;
+}
+.company__item--hillel {
+  background-color: #1C4280;
+}
+.company__item--wanna {
+  background-color: #143646;
+}
+.company__item--tap {
+  background-color: #F48B30;
+}
+.company__item--3d {
+  background-color: #9E4DC3;
+}
+.company__item--orang {
+  background-color: #FD9339;
+}
+.company__item--adtel {
+  background-color: #E2E2E4;
+}
+.company__item--clickky {
+  background-color: #C71C36;
+}
+.company__item--ecolease {
+  background-color: #DCF3F9;
+}
+.company__item--infra {
+  background-color: #EAEAEA;
+}
+.company__item--siti {
+  background-color: #282240;
+}
+.company__item--art {
+  background-color: #1D4568;
+}
+.company__item--ultimate {
+  background-color: #000000;
+}
+
+@media (min-width: 768px) {
+  .company__items {
+    grid-template-rows: repeat(4, minmax(120px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .company__items .company__item:nth-of-type(n+7) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .company__items {
+    grid-template-rows: repeat(3, minmax(120px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 /*# sourceMappingURL=style.css.map */

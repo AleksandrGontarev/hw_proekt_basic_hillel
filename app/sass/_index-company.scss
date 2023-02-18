@@ -1,0 +1,101 @@
+.company {
+    &__header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorMain;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-rows: repeat(6, minmax(120px, 1fr));
+        grid-template-columns: 1fr;
+
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__items .company__item:nth-of-type(n+7) {
+        display: none;
+    }
+
+    &__item--hillel {
+        background-color: #1C4280;
+    }
+
+    &__item--wanna {
+        background-color: #143646;
+    }
+
+    &__item--tap {
+        background-color: #F48B30;
+    }
+
+    &__item--3d {
+        background-color: #9E4DC3;
+    }
+
+    &__item--orang {
+        background-color: #FD9339;
+    }
+
+    &__item--adtel {
+        background-color: #E2E2E4;
+    }
+
+    &__item--clickky {
+        background-color: #C71C36;
+    }
+
+    &__item--ecolease {
+        background-color: #DCF3F9;
+    }
+
+    &__item--infra {
+        background-color: #EAEAEA;
+    }
+
+    &__item--siti {
+        background-color: #282240;
+    }
+
+    &__item--art {
+        background-color: #1D4568;
+    }
+
+    &__item--ultimate {
+        background-color: #000000;
+    }
+}
+
+@media (min-width:768px) {
+    .company {
+
+        &__items {
+            grid-template-rows: repeat(4, minmax(120px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__items .company__item:nth-of-type(n+7) {
+            display: flex;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .company {
+
+        &__items {
+            grid-template-rows: repeat(3, minmax(120px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
