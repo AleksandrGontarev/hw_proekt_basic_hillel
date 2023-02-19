@@ -24,7 +24,7 @@
     }
 
     &__bg-pic {
-        background-color: #FFFFFF;
+        background-color: $colorWhite;
         padding: 22px 100px;
         border-radius: 12px;
     }
@@ -34,15 +34,17 @@
     }
 
     &__dots {
-        border-bottom: solid 2px #E6E6F0;
+        border-bottom: solid 2px $colorDots;
         display: flex;
         justify-content: center;
         padding-bottom: 29px;
+        list-style: none;
+        padding-left: 0;
     }
 
     &__btn {
         cursor: pointer;
-        background-color: #D3EDFF;
+        background-color: $colorBtn;
         width: 16px;
         height: 16px;
         border-radius: 50%;
@@ -52,11 +54,11 @@
     }
 
     &__btn-active {
-        background-color: #24A3FF;
+        background-color: $colorRegular;
     }
 
     &__btn:not(.about-slider__btn-active):hover {
-        background-color: #7CC8FF;
+        background-color: $colorBtnBack;
     }
 
 }

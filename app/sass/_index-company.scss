@@ -28,51 +28,51 @@
     }
 
     &__item--hillel {
-        background-color: #1C4280;
+        background-color: $colorHillel;
     }
 
     &__item--wanna {
-        background-color: #143646;
+        background-color: $colorWanna;
     }
 
     &__item--tap {
-        background-color: #F48B30;
+        background-color: $colorTap
     }
 
     &__item--3d {
-        background-color: #9E4DC3;
+        background-color: $color3d;
     }
 
     &__item--orang {
-        background-color: #FD9339;
+        background-color: $colorOrange;
     }
 
     &__item--adtel {
-        background-color: #E2E2E4;
+        background-color: $colorAdtel;
     }
 
     &__item--clickky {
-        background-color: #C71C36;
+        background-color: $colorClickky;
     }
 
     &__item--ecolease {
-        background-color: #DCF3F9;
+        background-color: $colorEcolease;
     }
 
     &__item--infra {
-        background-color: #EAEAEA;
+        background-color: $colorInfra;
     }
 
     &__item--siti {
-        background-color: #282240;
+        background-color: $colorSiti;
     }
 
     &__item--art {
-        background-color: #1D4568;
+        background-color: $colorArt;
     }
 
     &__item--ultimate {
-        background-color: #000000;
+        background-color: $colorUltimate;
     }
 }
 

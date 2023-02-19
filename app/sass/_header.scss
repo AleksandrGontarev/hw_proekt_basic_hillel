@@ -24,12 +24,14 @@
         text-decoration: none;
         color: $colorText;
         font-weight: bold;
+        transition-duration: 700ms;
     }
 
     &__lang {
         display: flex;
         align-items: center;
-
+        list-style: none;
+        padding-left: 0;
         a {
             display: block;
             font-size: 12px;
@@ -38,6 +40,7 @@
             letter-spacing: 1px;
             padding: 5px 7px;
             border-radius: 8px;
+            transition-duration: 700ms;
         }
 
         a:not(.active):hover {
@@ -46,17 +49,19 @@
 
         .active {
             background: $colorAccent;
-            color: #FFFFFF;
+            color: $colorWhite
         }
     }
 
     &__icon-fb:hover path {
         fill: $colorAccent;
         background-color: transparent;
+        transition-duration: 700ms;
     }
 
     &__tel:hover {
         color: $colorAccent;
+        transition-duration: 700ms;
     }
 
     &__tel {
@@ -67,12 +72,25 @@
 
 
     &--dark-theme {
-        background-color: rgba(245, 245, 250, 0.2);
+        background-color: $colorBackBack;
+        p {
+            color: $colorWhite;
+        }
 
-        a {
-            color: #FFFFFF;
+       a {
+            color: $colorWhite;
+            transition-duration: 700ms;
+        }
+        a:not(.active):hover {
+            color: $colorAccent;
+        }
+       
+
+        .header-top__dark-fb {
+            fill: $colorWhite;
         }
     }
+
 
 }
 
@@ -121,7 +139,7 @@
 
     &__mobile-menu-btn:active {
         svg rect {
-            fill: #E6E6F0;
+            fill: $colorDots;
         }
     }
 
@@ -159,7 +177,7 @@
                 width: 6px;
                 height: 6px;
                 border-radius: 50%;
-                background-color: #E6E6F0;
+                background-color: $colorDots;
                 margin: 0 6px;
             }
         }
@@ -172,17 +190,7 @@
             color: $colorText;
         }
 
-        &--dark-theme {
-
-            p {
-
-                color: #FFFFFF;
-            }
-
-            svg .header-top__dark-fb {
-                fill: #FFFFFF;
-            }
-        }
+       
 
     }
 
@@ -222,6 +230,8 @@
 
         &__mobile-menu-list {
             display: flex;
+            list-style: none;
+            padding-left: 0;
 
             .list-item-active {
                 padding-bottom: 3px;
@@ -238,7 +248,6 @@
             line-height: 20px;
             text-align: right;
             color: $colorRegular;
-
         }
 
         &__list-item:not(.list-item-active):hover {
@@ -250,6 +259,14 @@
             .header-menu__list-item {
                 color: #FFFFFF;
             }
+
+            .list-item-active {
+                padding-bottom: 3px;
+                border-bottom: solid 2px;
+                text-decoration: none;
+                color: $colorAccent;
+            }
+
         }
 
     }
@@ -291,7 +308,6 @@
             padding-top: 0;
         }
 
-        &--dark-theme {}
     }
 
     .header-menu {

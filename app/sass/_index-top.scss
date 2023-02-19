@@ -19,9 +19,9 @@
         height: 42px;
         border-radius: 50%;
         background: transparent;
-        border: 2px solid rgba(255, 255, 255, 0.5);
+        border: 2px solid $colorHeadBtn;
         cursor: pointer;
-
+        transition-duration: 700ms;
 
         svg {
             margin-top: 5px;
@@ -37,6 +37,7 @@
 
         svg {
             opacity: 1;
+
             path {
                 stroke: $colorAccent;
             }

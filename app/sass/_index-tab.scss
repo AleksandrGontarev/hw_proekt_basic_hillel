@@ -7,12 +7,15 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
         padding-bottom: 30px;
-        border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 4px solid $colorListBtn;
+        list-style: none;
+        padding-left: 0;
     }
 
     &__list-btn::-webkit-scrollbar {
-        display: none;
-    }
+        display: none; 
+         }
+
 
     &__btn {
         white-space: nowrap;
@@ -24,7 +27,8 @@
         border: none;
         padding: 0;
         margin-right: 45px;
-        text-decoration: none;
+        text-decoration: none;   
+  
     }
 
     &__btn-active,
@@ -33,13 +37,15 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        cursor: pointer;
+
     }
 
 
     &__content {
         padding-top: 30px;
         display: none;
-        color: #FFFFFF;
+        color: $colorWhite;
     }
 
     &__content-active {
@@ -130,7 +136,7 @@
             padding: 0;
             padding-left: 60px;
 
-            border-left: 4px solid rgba(255, 255, 255, 0.3);
+            border-left: 4px solid $colorListBtn;
         }
 
         &__content-text {
@@ -146,7 +152,7 @@
         gap: 0;
 
         &__list-btn {
-            border-right: 4px solid rgba(255, 255, 255, 0.3);
+            border-right: 4px solid $colorListBtn;
         }
 
         &__content {

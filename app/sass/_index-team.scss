@@ -38,6 +38,12 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $colorRegular;
+        transition-duration: 700ms;
+    }
+
+    &__link:hover {
+        color: $colorAccent;
+        text-decoration: none;
     }
 
     &__link::after {
@@ -47,6 +53,11 @@
         padding-left: 10px;
         text-decoration: none;
         background-repeat: no-repeat;
+        transition-duration: 700ms;
+    }
+
+    &__link:hover::after {
+        background-image: url(../img/arrow-hover.svg);
     }
 
     &__header {
@@ -81,6 +92,8 @@
         padding-bottom: 60px;
         display: flex;
         justify-content: center;
+        list-style: none;
+        padding-left: 0;
     }
 
     &__dot {
@@ -93,12 +106,19 @@
         opacity: 0.2;
         margin: 0 7px;
         font-size: 0;
+        transition-duration: 700ms;
+        transition-property: opacity;
     }
 
     &__dot-active, 
     &__dot-active:hover {
         background-color: $colorRegular;
         opacity: 1;
+    }
+
+    &__dot:hover {
+        background-color: $colorRegular;
+        opacity: 0.5;
     }
 }
 
