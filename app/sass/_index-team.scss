@@ -1,0 +1,183 @@
+.team {
+
+    margin-top: 50px;
+    padding: 0 15px;
+
+    &__body {
+        display: none;
+    }
+
+    &__body-active {
+        display: flex;
+        flex-direction: column;
+        background-color: $colorBg;
+        border-radius: 0 0 12px 12px;
+    }
+
+    &__team-container {
+        padding: 28px 20px 0 30px;
+        word-wrap: break-word;
+        padding-bottom: 30px;
+
+    }
+
+    &__img {
+        display: flex;
+        min-width: 315px;
+        min-height: 500px;
+        background-image: url(../img/man-with-glass.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        font-size: 0;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorRegular;
+        transition-duration: 700ms;
+    }
+
+    &__link:hover {
+        color: $colorAccent;
+        text-decoration: none;
+    }
+
+    &__link::after {
+        content: '';
+        background-image: url(../img/arrow.svg);
+        background-position: center center;
+        padding-left: 10px;
+        text-decoration: none;
+        background-repeat: no-repeat;
+        transition-duration: 700ms;
+    }
+
+    &__link:hover::after {
+        background-image: url(../img/arrow-hover.svg);
+    }
+
+    &__header {
+        padding-top: 5px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $colorGradRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &__name {
+        padding-top: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $colorSeparator;
+    }
+
+    &__position {
+        padding-top: 6px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $colorSeparator;
+    }
+
+    &__dots {
+        padding-top: 23px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__dot {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: none;
+        background-color: $colorRegular;
+        opacity: 0.2;
+        margin: 0 7px;
+        font-size: 0;
+        transition-duration: 700ms;
+        transition-property: opacity;
+    }
+
+    &__dot-active, 
+    &__dot-active:hover {
+        background-color: $colorRegular;
+        opacity: 1;
+    }
+
+    &__dot:hover {
+        background-color: $colorRegular;
+        opacity: 0.5;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .team {
+        margin-top: 80px;
+        padding: 0 45px;
+
+        &__img {
+            min-width: 648px;
+            min-height: 500px;
+            background-image: url(../img/man-with-glass-tablet-sd.jpg);
+        }
+
+        &__header {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .team {
+        &__header {
+            font-size: 37px;
+        }
+
+        &__body-active {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        &__img {
+            min-width: 400px;
+            min-height: 528px;
+            background-image: url(../img/man-with-glass-tablet-hd.jpg);
+        }
+
+        &__team-container {
+            padding: 30px 30px 0 30px;
+        }
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .team {
+        padding: 0;
+
+        &__body-active {
+            grid-template-columns: 1fr 3fr;
+        }
+
+        &__img {
+            min-width: 400px;
+            min-height: 344px;
+            background-image: url(../img/man-with-glass-desktop.jpg);
+        }
+    }
+}

@@ -29,7 +29,7 @@
         padding-left: 32px;
         padding-top: 8px;
         padding-bottom: 30px;
-        border-left: solid 4px #E6E6F0;
+        border-left: solid 4px $colorDots;
     }
 
     &__card-top {
@@ -51,6 +51,12 @@
         }
     }
 
+
+    &__cards-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
     &__cards-list li:last-child {
         padding-bottom: 0;
         margin-bottom: 30px;
@@ -59,7 +65,7 @@
 
 @media (min-width: 768px) {
     .about-top {
-        padding: 65px 30px 30px 60px;
+        padding: 65px 45px 30px 45px;
 
 
         &__text-header {
@@ -78,6 +84,11 @@
         &__card {
             padding-top: 10px;
             padding-bottom: 29px;
+            padding-left: 30px;
+        }
+
+        &__card-top {
+            padding-bottom: 10px;
         }
 
     }
@@ -102,7 +113,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
     .about-top {
         grid-template-columns: 1.65fr 1fr;
         padding-left: 120px;

@@ -1,0 +1,101 @@
+.company {
+    &__header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorMain;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-rows: repeat(6, minmax(120px, 1fr));
+        grid-template-columns: 1fr;
+
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__items .company__item:nth-of-type(n+7) {
+        display: none;
+    }
+
+    &__item--hillel {
+        background-color: $colorHillel;
+    }
+
+    &__item--wanna {
+        background-color: $colorWanna;
+    }
+
+    &__item--tap {
+        background-color: $colorTap
+    }
+
+    &__item--3d {
+        background-color: $color3d;
+    }
+
+    &__item--orang {
+        background-color: $colorOrange;
+    }
+
+    &__item--adtel {
+        background-color: $colorAdtel;
+    }
+
+    &__item--clickky {
+        background-color: $colorClickky;
+    }
+
+    &__item--ecolease {
+        background-color: $colorEcolease;
+    }
+
+    &__item--infra {
+        background-color: $colorInfra;
+    }
+
+    &__item--siti {
+        background-color: $colorSiti;
+    }
+
+    &__item--art {
+        background-color: $colorArt;
+    }
+
+    &__item--ultimate {
+        background-color: $colorUltimate;
+    }
+}
+
+@media (min-width:768px) {
+    .company {
+
+        &__items {
+            grid-template-rows: repeat(4, minmax(120px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__items .company__item:nth-of-type(n+7) {
+            display: flex;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .company {
+
+        &__items {
+            grid-template-rows: repeat(3, minmax(120px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

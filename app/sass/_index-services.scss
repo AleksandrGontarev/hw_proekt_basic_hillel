@@ -1,0 +1,116 @@
+.services {
+    padding: 0 15px 30px 15px;
+
+    &__head-link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorRegular;
+        display: flex;
+        padding-bottom: 10px;
+        transition-duration: 700ms;
+    }
+
+    &__head-link:hover {
+        color: $colorAccent;
+        text-decoration: none;
+    }
+
+    &__head-link::after {
+        content: '';
+        background-image: url(../img/arrow.svg);
+        background-position: center center;
+        padding-left: 10px;
+        transition-duration: 700ms;
+    }
+
+    &__head-link:hover::after {
+        background-image: url(../img/arrow-hover.svg);
+    }
+
+    &__hider {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $colorGradRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-bottom: 30px;
+    }
+
+    &__pic {
+        width: 92px;
+        height: 92px;
+        background-color: $colorWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        display: inline-flex;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: $colorRegular;
+        padding-bottom: 15px;
+        transition-duration: 700ms;
+    }
+
+    &__link:hover {
+        color: $colorAccent;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    &__text {
+        display: inline-flex;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .services {
+        padding-left: 45px;
+        padding-right: 45px;
+
+        &__hider {
+            font-size: 38px;
+            line-height: 46px;
+            padding-bottom: 58px;
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 60px;
+            row-gap: 30px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .services {
+        padding-top: 60px;
+        &__items {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .services {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

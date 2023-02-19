@@ -1,0 +1,193 @@
+.publications {
+    background: linear-gradient(0deg, $colorBg, $colorBg);
+
+    a:hover {
+        color: $colorAccent;
+        text-decoration: none;
+        transition-duration: 700ms;
+    }
+
+ &__pic {
+        object-fit: cover;
+        width: 100%;
+        height:200px;
+        border-radius: 8px 8px 0 0;
+    }
+
+
+
+    &__container {
+        padding: 30px 15px 0 15px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    &__container::after {
+        content: '';
+        display: block;
+        height: 2px;
+        background-color: $colorDots;
+        margin-top: 30px;
+        transition-duration: 700ms;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorRegular;
+    }
+
+    &__link::after {
+        content: '';
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-left: 10px;
+    }
+
+    &__link:hover::after {
+        background-image: url(../img/arrow-hover.svg);
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $colorGradRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-top: 4px;
+        padding-bottom: 30px;
+    }
+
+    &__cards {
+        display: grid;
+        gap: 30px;
+
+    }
+
+    &__card {
+        background-color: $colorWhite;
+    }
+
+    &__body {
+        padding: 25px 30px 30px 30px;
+        background-color: $colorWhite;
+    }
+
+    &__item-link {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $colorRegular;
+    }
+
+    &__item-data {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorText;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__item-text {
+        border-top: 4px solid $colorDots;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
+        padding-top: 15px;
+    }
+
+}
+
+@media (min-width:768px) {
+
+    .publications {
+        &__container {
+            padding-top: 30px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        &__header {
+            padding-top: 10px;
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &__cards {
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        &__card--equity {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &__card--penalty {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        &__card--millenial {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .publications {
+
+        &__container {
+            padding-top: 30px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+        &__cards {
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+        &__card--equity {
+            grid-column: auto;
+            grid-row: auto;
+        }
+
+        &__card--penalty {
+            grid-column: auto;
+            grid-row: auto;
+        }
+
+        &__card--millenial {
+
+            grid-column: auto;
+            grid-row: auto;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .publications {
+        &__container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__header {
+            padding-top: 10px;
+        }
+
+    }
+
+}

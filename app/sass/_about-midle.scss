@@ -19,13 +19,12 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        /*text-fill-color: transparent;*/
     }
 }
 
 @media (min-width: 768px) {
     .about-midle {
-        padding: 60px;
+        padding: 60px 45px;
 
         &__text {
             font-size: 19px;
@@ -39,7 +38,7 @@
         &__header {
             font-size: 38px;
             line-height: 46px;
-            padding-top: 0;
+            padding-top: 33px;
 
         }
     }
@@ -74,7 +73,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
     .about-midle {
         padding: 60px 120px;
         grid-template-columns: 2fr 1fr;

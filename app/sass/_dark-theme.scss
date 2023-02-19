@@ -1,0 +1,47 @@
+.gradient {
+    background: url(../img/back-pic.svg), $colorGradBack;
+    border-radius: 0px 0px 12px 12px;
+    background-repeat: no-repeat, repeat;
+    background-position: center top, center;
+    background-size: 524px 600px, cover;
+    position: relative;
+}
+
+.gradient::after {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    border-radius: 0 0 12px 12px;
+    background: $colorGradAf;
+}
+
+.gradient::before {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    border-radius: 0 0 12px 12px;
+    background: $colorGradBf;
+}
+
+
+@media (min-width: 768px) {
+    .gradient {
+        background-size: 894px 1024px, cover;
+    }
+}
+@media (min-width: 1024px) {
+    .gradient {
+        background-size: 670px 768px, cover;
+    }
+}
+@media (min-width: 1200px) {
+    .gradient {
+        background-size: 697px 799px, cover;
+    }
+}

@@ -1,7 +1,5 @@
 .about-slider {
     background-color: $colorBg;
-    padding: 0 25px 0 25px;
-
 
     &__header {
         font-weight: 700;
@@ -21,12 +19,12 @@
         padding-bottom: 25px;
     }
 
-    &__pics div:not(:first-of-type) {
+    &__bg-pic:not(:first-child) {
         display: none;
     }
 
     &__bg-pic {
-        background-color: #FFFFFF;
+        background-color: $colorWhite;
         padding: 22px 100px;
         border-radius: 12px;
     }
@@ -36,15 +34,17 @@
     }
 
     &__dots {
-        border-bottom: solid 2px #E6E6F0;
+        border-bottom: solid 2px $colorDots;
         display: flex;
         justify-content: center;
         padding-bottom: 29px;
+        list-style: none;
+        padding-left: 0;
     }
 
     &__btn {
         cursor: pointer;
-        background-color: #D3EDFF;
+        background-color: $colorBtn;
         width: 16px;
         height: 16px;
         border-radius: 50%;
@@ -54,38 +54,40 @@
     }
 
     &__btn-active {
-        background-color: #24A3FF;
+        background-color: $colorRegular;
     }
 
     &__btn:not(.about-slider__btn-active):hover {
-        background-color: #7CC8FF;
+        background-color: $colorBtnBack;
     }
 
 }
 
 @media (min-width: 768px) {
     .about-slider {
-        padding: 0 30px 0 60px;
+        &__header {
+            padding-bottom: 27px;
+        }
+
         &__pics {
+            display: grid;
+            grid-template-columns: repeat(4, min(132px));
+            column-gap: 40px;
+            padding-bottom: 25px;
+        }
+
+        &__bg-pic:not(:first-child) {
             display: flex;
-            justify-content: center;
         }
 
         &__bg-pic {
-            display: flex;
-            justify-content: center;
-            width: 25%;
-            padding: 24px 0;
-            margin: 0 20px;
+            padding: 25px 0;
         }
 
         &__pic {
-            max-width: 100%;
-            height: 100%;
-        }
+            display: block;
+            margin: 0 auto;
 
-        &__pics div:not(:first-of-type) {
-            display: flex;
         }
 
         &__dots li:nth-child(even) {
@@ -94,46 +96,38 @@
     }
 }
 
-@media (width:1024px) {
+@media (min-width:1024px) {
     .about-slider {
         padding: 0;
-
-        &__pics {
-            justify-content: flex-start;
-        }
-
-        &__pic {
-            max-height: 60px;
-            width: auto;
-            
-        }
-
-        &__bg-pic {
-            margin: 0 20px;
-        }
-    }
-
-}
-
-@media (width: 1440px) {
-    .about-slider {
-        margin: 0 auto;
-        padding: 0 40px;
         max-width: 100%;
 
         &__pics {
-            justify-content: flex-start;
+            grid-template-columns: repeat(4, 1fr);
+
         }
 
         &__pic {
-            max-height: 60px;
+            min-height: 60px;
             width: auto;
-            
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .about-slider {
+        padding: 0;
+        max-width: 100%;
+
+        &__pics {
+            grid-template-columns: repeat(4, 1fr);
         }
 
-        &__bg-pic {
-            margin: 0 20px;
+        &__pic {
+            min-height: 60px;
+            width: auto;
+
         }
+
     }
 
 }

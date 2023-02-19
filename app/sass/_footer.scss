@@ -15,6 +15,7 @@
 
     a {
         text-decoration: none;
+        transition-duration: 700ms;
     }
 
     &__top,
@@ -53,10 +54,12 @@
 
     &__fb {
         margin-bottom: 7px;
-    }
+      }
 
     &__fb:hover path {
-        fill: $colorAccent
+        fill: $colorAccent;
+        transition-duration: 700ms;
+        transition-property: fill;
     }
 
     &__tel {
@@ -84,7 +87,7 @@
     .footer {
         justify-items: flex-start;
 
-        padding: 30px 0 30px 200px;
+        padding: 30px 60px;
 
 
         &__top,
@@ -130,7 +133,7 @@
     .footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, min-content);
-        padding: 30px 15px 0 15px;
+        padding: 30px 60px;
         max-width: 100%;
 
         &__top {
@@ -145,7 +148,7 @@
 
         &__btn {
             padding-left: 43px;
-            justify-self: center;
+            justify-self: flex-end;
             grid-column: 2 / 3;
             grid-row: 1 / 2;
             &--dt-hd {
@@ -155,14 +158,14 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
     .footer {
         padding: 30px 60px 0 60px;
         max-width: 100%;
 
         &__btn {
             padding-left: 0px;
-            justify-self: flex-start;
+            justify-self: flex-end;
 
             &--dt-hd {
                 padding-right: 30px;

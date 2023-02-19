@@ -29,7 +29,7 @@
                 </a>
             </div>
             <div class="header-logo">
-                <a class="header-logo__icon" href="#">
+                <a class="header-logo__icon" href="index.html">
                     <img class="img-responsive" src="./img/logo.svg" alt="logo" width="70" height="30">
                 </a>
                 <p class="header-logo__about">about us</p>
@@ -44,7 +44,7 @@
                     </svg>
                 </button>
                 <ul class="header-menu__mobile-menu-list">
-                    <li><a class="header-menu__list-item list-item-active" href="#">about us</a></li>
+                    <li><span class="header-menu__list-item list-item-active">about us</span></li>
                     <li><a class="header-menu__list-item" href="#">services</a></li>
                     <li><a class="header-menu__list-item" href="#">team</a></li>
                     <li><a class="header-menu__list-item" href="#">publications</a></li>
@@ -54,13 +54,11 @@
         </header>
     </div>
 
-
-
     <div class="main">
         <!--<h1>about</h1>-->
         <div class="container">
             <section class="about-top">
-                <article class="about-top__text">
+                <div class="about-top__text">
                     <h2 class="about-top__text-header">We turn over the idea of legal services</h2>
                     <p class="about-top__text-body">Consolidating many years of experience and practice, the company's
                         lawyers accompany complex
@@ -70,8 +68,8 @@
                         HLEGAL is a reliable business partner, confirmed by stable cooperation with international law
                         firms, the trust of large Ukrainian and international companies, and the recognition of
                         professional ratings.</p>
-                </article>
-                <article class="about-top__cards">
+                    </div>
+                <div class="about-top__cards">
                     <ul class="about-top__cards-list">
                         <li class="about-top__card">
                             <div class="about-top__card-top">
@@ -116,7 +114,7 @@
                             <p>hours of pro bono work annually</p>
                         </li>
                     </ul>
-                </article>
+                </div>
             </section>
         </div>
         <section class="about-img container">
@@ -139,40 +137,50 @@
                         It's simple. If you are unhappy with our work, we will refund your money. We trust our clients.
                         And
                         we
-                        want our clients to trust us too.</p>
+                        want our clients to trust us too.
                     </p>
                 </div>
                 <h2 class="about-midle__header">Quality is what we care about the most.</h2>
             </section>
         </div>
-        <section class="about-slider container">
-            <h2 class="about-slider__header">achievements</h2>
-            <div class="about-slider__pics">
-                <div class="about-slider__bg-pic">
-                    <img class="about-slider__pic" src="./img/about-slider-pic-1.png"
-                        alt="about-slider-pic-1" width="53" height="40">
+
+        <section class="about-slider">
+            <div class="container">
+                <h2 class="about-slider__header">achievements</h2>
+                <div class="about-slider__pics">
+                    
+                        <div class="about-slider__bg-pic">
+                            <img class="about-slider__pic" src="./img/about-slider-pic-1.png" alt="about-slider-pic-1"
+                                width="53" height="40">
+                        </div>
+                    
+                
+                        <div class="about-slider__bg-pic">
+                            <img class="about-slider__pic" src="./img/about-slider-pic-2.png" alt="about-slider-pic-2"
+                                width="106" height="40">
+                        </div>
+     
+
+                        <div class="about-slider__bg-pic">
+                            <img class="about-slider__pic" src="./img/about-slider-pic-3.png" alt="about-slider-pic-3"
+                                width="130" height="40">
+                        </div>
+
+                        <div class="about-slider__bg-pic">
+                            <img class="about-slider__pic" src="./img/about-slider-pic-4.png" alt="about-slider-pic-4"
+                                width="110" height="40">
+                        </div>
+           
                 </div>
-                <div class="about-slider__bg-pic">
-                    <img class="about-slider__pic" src="./img/about-slider-pic-2.png"
-                        alt="about-slider-pic-2" width="106" height="40"> 
-                </div>
-                <div class="about-slider__bg-pic">
-                    <img class="about-slider__pic" src="./img/about-slider-pic-3.png"
-                        alt="about-slider-pic-3" width="130" height="40">
-                </div>
-                <div class="about-slider__bg-pic">
-                    <img class="about-slider__pic" src="./img/about-slider-pic-4.png"
-                        alt="about-slider-pic-4" width="110" height="40">
-                </div>
+                <ul class="about-slider__dots">
+                    <li><button class="about-slider__btn about-slider__btn-active" type="button">1</button></li>
+                    <li><button class="about-slider__btn" type="button">2</button></li>
+                    <li><button class="about-slider__btn" type="button">3</button></li>
+                    <li><button class="about-slider__btn" type="button">4</button></li>
+                    <li><button class="about-slider__btn" type="button">5</button></li>
+                    <li><button class="about-slider__btn" type="button">6</button></li>
+                </ul>
             </div>
-            <ul class="about-slider__dots">
-                <li><button class="about-slider__btn about-slider__btn-active" type="button">1</button></li>
-                <li><button class="about-slider__btn" type="button">2</button></li>
-                <li><button class="about-slider__btn" type="button">3</button></li>
-                <li><button class="about-slider__btn" type="button">4</button></li>
-                <li><button class="about-slider__btn" type="button">5</button></li>
-                <li><button class="about-slider__btn" type="button">6</button></li>
-            </ul>
         </section>
     </div>
     <footer class="footer container">
@@ -193,7 +201,7 @@
         </div>
         <p class="footer__btn">© 2021 HLEGAL Law company, LLC</p>
     </footer>
-    </div>
+    
 
 </body>
 
