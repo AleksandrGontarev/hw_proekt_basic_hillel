@@ -1,6 +1,8 @@
 .header-top__address,
 .header-top__icon-fb,
-.header-menu__mobile-menu-list {
+
+.header-menu__mobile-menu-list /*******Burger********/
+    {
     display: none;
 }
 
@@ -8,6 +10,7 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: min-content min-content;
+    position: relative;
 
 }
 
@@ -32,6 +35,7 @@
         align-items: center;
         list-style: none;
         padding-left: 0;
+
         a {
             display: block;
             font-size: 12px;
@@ -73,18 +77,20 @@
 
     &--dark-theme {
         background-color: $colorBackBack;
+
         p {
             color: $colorWhite;
         }
 
-       a {
+        a {
             color: $colorWhite;
             transition-duration: 700ms;
         }
+
         a:not(.active):hover {
             color: $colorAccent;
         }
-       
+
 
         .header-top__dark-fb {
             fill: $colorWhite;
@@ -128,20 +134,68 @@
 .header-menu {
     &__mobile-menu-btn {
         border: none;
-        background-color: transparent;
+        border-radius: 8px;
+        background-image: url(../img/hamburger.svg);
         cursor: pointer;
-        padding: 12px 0;
+        width: 32px;
+        height: 32px;
+        margin-top: 12px;
+        background-color: transparent;
+        transition-duration: 700ms;
 
-        svg rect {
-            fill: none;
+        &--dark {
+            background-image: url(../img/hamburger-dark.svg);
+        }
+
+        &--dark.active-btn-dark {
+            background-image: url(../img/close-dark.svg);
         }
     }
 
-    &__mobile-menu-btn:active {
-        svg rect {
-            fill: $colorDots;
+    &__mobile-menu-btn:hover {
+        background-color: $colorDots;
+    }
+
+    &__mobile-menu-btn.active-btn {
+        background-image: url(../img/close.svg);
+    }
+
+               /********* Buregr **********/
+
+ /*   &__mobile-menu-list {   
+        display: none; 
+        padding: 12px;
+        list-style: none;
+        position: absolute;
+        width: 375px;
+        right: -15px;
+        top: auto;
+        background-color: $colorWhite;
+        overflow: auto;
+        height: calc(100vh - 62px);
+
+        li:not(:last-child) {
+            margin-bottom: 15px;
         }
     }
+
+    &__list-item {
+        display: block;
+        background-color: $colorBg;
+        padding: 7px;
+        width: 100%;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: $colorRegular;
+        border-radius: 12px;
+    }*/
+
+
+
+
+
 
 }
 
@@ -181,7 +235,9 @@
                 margin: 0 6px;
             }
         }
-
+        &__tel {
+            padding-top: 0;
+        }
         &__address {
             font-weight: 400;
             font-size: 16px;
@@ -190,7 +246,7 @@
             color: $colorText;
         }
 
-       
+
 
     }
 
@@ -231,7 +287,15 @@
         &__mobile-menu-list {
             display: flex;
             list-style: none;
-            padding-left: 0;
+            padding: 0;
+            position: static;
+            width: auto;
+            right: 0;
+            background-color: transparent;
+
+            li:not(:last-child) {
+                margin-bottom: 0;
+            }
 
             .list-item-active {
                 padding-bottom: 3px;
@@ -242,17 +306,22 @@
         }
 
         &__list-item {
+            display: inline;
             margin-right: 15px;
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
             text-align: right;
             color: $colorRegular;
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
         }
 
         &__list-item:not(.list-item-active):hover {
             border-bottom: solid 2px;
             text-decoration: none;
+            padding-bottom: 3px;
         }
 
         &--dark-theme {
@@ -328,7 +397,7 @@
 @media (min-width: 1200px) {
     .header {
         padding: 35px 0;
-        
+
     }
 
     .header-top {
