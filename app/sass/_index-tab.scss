@@ -13,8 +13,8 @@
     }
 
     &__list-btn::-webkit-scrollbar {
-        display: none; 
-         }
+        display: none;
+    }
 
 
     &__btn {
@@ -27,9 +27,8 @@
         border: none;
         padding: 0;
         margin-right: 45px;
-        text-decoration: none;   
-  
-    }
+        text-decoration: none;
+            }
 
     &__btn-active,
     &__btn:hover {
@@ -38,7 +37,6 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         cursor: pointer;
-
     }
 
 

@@ -1,0 +1,78 @@
+.team-entry {
+    padding: 0 15px 10px 15px;
+
+    &__top {
+        padding-top: 20px;
+    }
+
+    &__top {
+        padding-bottom: 20px;
+        border-bottom: solid 4px $colorDots;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: $colorGradRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    &__position {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $colorText;
+        padding-bottom: 10px;
+    }
+
+    &__link {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $colorRegular;
+        padding-bottom: 10px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 20px;
+    }
+
+    &__body {
+        padding-top: 30px;
+    }
+
+    &__body-header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorMain;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    &__pic {
+        height: 375px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .team-entry {
+        &__top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
