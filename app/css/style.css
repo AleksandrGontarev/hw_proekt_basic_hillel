@@ -233,6 +233,11 @@ a {
   display: none;
 }
 
+/*******Burger********/
+.header-menu__mobile-menu-list {
+  display: none; /******* ON OFF *******/
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr -webkit-min-content;
@@ -355,36 +360,8 @@ a {
 }
 
 .header-menu {
-  /********* Buregr **********/
-  /*   &__mobile-menu-list {   
-         display: none; 
-         padding: 12px;
-         list-style: none;
-         position: absolute;
-         width: 375px;
-         right: -15px;
-         top: auto;
-         background-color: $colorWhite;
-         overflow: auto;
-         height: calc(100vh - 62px);
-
-         li:not(:last-child) {
-             margin-bottom: 15px;
-         }
-     }
-
-     &__list-item {
-         display: block;
-         background-color: $colorBg;
-         padding: 7px;
-         width: 100%;
-         text-align: center;
-         font-weight: 700;
-         font-size: 24px;
-         line-height: 29px;
-         color: $colorRegular;
-         border-radius: 12px;
-     }*/
+  /*** ON OFF ***/
+  /********* Burger **********/
 }
 .header-menu__mobile-menu-btn {
   border: none;
@@ -397,6 +374,7 @@ a {
   background-color: transparent;
   -webkit-transition-duration: 700ms;
           transition-duration: 700ms;
+  /*** ON OFF ***/
 }
 .header-menu__mobile-menu-btn--dark {
   background-image: url(../img/hamburger-dark.svg);
@@ -409,6 +387,33 @@ a {
 }
 .header-menu__mobile-menu-btn.active-btn {
   background-image: url(../img/close.svg);
+}
+.header-menu__mobile-menu-list {
+  display: none; /****** ON OFF *******/
+  padding: 12px;
+  list-style: none;
+  position: absolute;
+  width: 375px;
+  right: -15px;
+  top: auto;
+  background-color: #FFFFFF;
+  overflow: auto;
+  height: calc(100vh - 62px);
+}
+.header-menu__mobile-menu-list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.header-menu__list-item {
+  display: block;
+  background-color: #F5F5FA;
+  padding: 7px;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #24A3FF;
+  border-radius: 12px;
 }
 
 @media (min-width: 768px) {

@@ -1,9 +1,14 @@
 .header-top__address,
 .header-top__icon-fb,
-
-.header-menu__mobile-menu-list /*******Burger********/
+.header-menu__mobile-menu-list 
     {
     display: none;
+}
+
+/*******Burger********/
+.header-menu__mobile-menu-list 
+    {
+    display: none;   /******* ON OFF *******/
 }
 
 .header {
@@ -149,7 +154,7 @@
 
         &--dark.active-btn-dark {
             background-image: url(../img/close-dark.svg);
-        }
+        } /*** ON OFF ***/
     }
 
     &__mobile-menu-btn:hover {
@@ -158,12 +163,12 @@
 
     &__mobile-menu-btn.active-btn {
         background-image: url(../img/close.svg);
-    }
+    } /*** ON OFF ***/
 
-               /********* Buregr **********/
+               /********* Burger **********/
 
- /*   &__mobile-menu-list {   
-        display: none; 
+    &__mobile-menu-list {   
+        display: none; /****** ON OFF *******/
         padding: 12px;
         list-style: none;
         position: absolute;
@@ -190,7 +195,7 @@
         line-height: 29px;
         color: $colorRegular;
         border-radius: 12px;
-    }*/
+    }
 
 
 
