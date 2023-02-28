@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+
+
 *::after,
 *::before {
     box-sizing: border-box;
@@ -14,11 +16,12 @@
     font-style: normal;
     margin: 0 auto;
     min-width: 345px;
+
 }
 
-/*.fixed {
+.fixed {
     overflow: hidden;
-}*/
+}
 
 .container {
     margin: 0 auto;
@@ -48,8 +51,3 @@
 a {
     text-decoration: none;
 }
-
-/*ul {
-    list-style: none;
-    padding-left: 0;
-}*/

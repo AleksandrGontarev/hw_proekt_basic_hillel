@@ -1,14 +1,7 @@
 .header-top__address,
 .header-top__icon-fb,
-.header-menu__mobile-menu-list 
-    {
+.header-menu__mobile-menu-list {
     display: none;
-}
-
-/*******Burger********/
-.header-menu__mobile-menu-list 
-    {
-    display: none;   /******* ON OFF *******/
 }
 
 .header {
@@ -16,9 +9,7 @@
     grid-template-columns: 1fr min-content;
     grid-template-rows: min-content min-content;
     position: relative;
-
 }
-
 
 .header-top {
     grid-column: 1 / -1;
@@ -154,7 +145,7 @@
 
         &--dark.active-btn-dark {
             background-image: url(../img/close-dark.svg);
-        } /*** ON OFF ***/
+        }
     }
 
     &__mobile-menu-btn:hover {
@@ -163,17 +154,17 @@
 
     &__mobile-menu-btn.active-btn {
         background-image: url(../img/close.svg);
-    } /*** ON OFF ***/
+    }
 
-               /********* Burger **********/
-
-    &__mobile-menu-list {   
-        display: none; /****** ON OFF *******/
+    /********* Burger **********/
+    &__mobile-menu-list-show {
+        display: block;
         padding: 12px;
         list-style: none;
         position: absolute;
         width: 375px;
         right: -15px;
+
         top: auto;
         background-color: $colorWhite;
         overflow: auto;
@@ -197,11 +188,24 @@
         border-radius: 12px;
     }
 
+    &__list-item:not(.list-item-active):hover {
+        text-decoration: none;
+        background: $colorDots;
+    }
 
+    .list-item-active {
+        text-decoration: none;
+        color: $colorAccent;
+    }
 
+}
 
+.header-menu__mobile-menu-list {
+    display: none;
+}
 
-
+.show {
+    display: block;
 }
 
 @media (min-width: 768px) {
@@ -240,9 +244,11 @@
                 margin: 0 6px;
             }
         }
+
         &__tel {
             padding-top: 0;
         }
+
         &__address {
             font-weight: 400;
             font-size: 16px;
@@ -297,6 +303,7 @@
             width: auto;
             right: 0;
             background-color: transparent;
+            height: auto;
 
             li:not(:last-child) {
                 margin-bottom: 0;
@@ -344,6 +351,7 @@
         }
 
     }
+
 }
 
 @media (min-width: 1024px) {

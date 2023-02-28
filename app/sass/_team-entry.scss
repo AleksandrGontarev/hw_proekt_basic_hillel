@@ -63,7 +63,7 @@
     &__pic {
         height: 375px;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 12px;
     }
 }
@@ -74,5 +74,12 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
+        &__pic {
+            height: 375px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
     }
 }
