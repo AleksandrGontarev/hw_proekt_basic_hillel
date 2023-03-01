@@ -934,6 +934,7 @@ a {
     border-bottom: solid 2px;
     text-decoration: none;
     padding-bottom: 3px;
+    background-color: transparent;
   }
   .header-menu--dark-theme .header-menu__list-item {
     color: #FFFFFF;
