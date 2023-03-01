@@ -11,3 +11,10 @@ buton.addEventListener('click', function() {
     burger_item.classList.toggle('header-menu__list-item-show')
     body.classList.toggle('fixed')
 })
+
+
+$('.slick').slick({
+    dots: true,
+    arrows: false,
+    speed: 700,
+  });

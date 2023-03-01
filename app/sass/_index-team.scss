@@ -83,7 +83,8 @@
         color: $colorSeparator;
     }
 
-    &__dots {
+
+    .slick-dots {
         padding-top: 23px;
         padding-bottom: 60px;
         display: flex;
@@ -92,7 +93,7 @@
         padding-left: 0;
     }
 
-    &__dot {
+    .slick-dots button {
         cursor: pointer;
         width: 16px;
         height: 16px;
@@ -106,15 +107,14 @@
         transition-property: opacity;
     }
 
-    &__dot-active,
-    &__dot-active:hover {
-        background-color: $colorRegular;
-        opacity: 1;
-    }
-
-    &__dot:hover {
+    .slick-dots button:hover {
         background-color: $colorRegular;
         opacity: 0.5;
+    }
+
+    li.slick-active button {
+        background-color: $colorRegular;
+        opacity: 1;
     }
 }
 
@@ -147,6 +147,7 @@
             border-radius: 12px 0 0 12px;
             min-height: 528px;
             object-fit: cover;
+
         }
 
         &__team-container {
