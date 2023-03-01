@@ -1,7 +1,7 @@
 .about-img {
     padding: 35px;
     background-color: #4E4D79;
-    background-image: url(../img/team.jpg);
+    background-image: url('../img/team-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -21,9 +21,16 @@
     }
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .about-img {
+        background-image: url('../img/team-mobile@2x.jpg');
+    }
+}
+
 @media (min-width: 768px) {
     .about-img {
         padding: 89px 0;
+        background-image: url('../img/team-tablet.jpg');
 
         &__text {
             font-size: 46px;
@@ -31,11 +38,18 @@
             letter-spacing: 63px;
             max-width: 328px;
         }
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            .about-img {
+                background-image: url('../img/team-tablet@2x.jpg');
+            }
+        }
     }
 }
 
 @media (min-width: 1024px) {
     .about-img {
+        background-image: url('../img/team-tablet.jpg');
         padding: 103px 0;
 
         &__text {
@@ -44,11 +58,18 @@
             letter-spacing: 63px;
             max-width: 448px;
         }
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            .about-img {
+                background-image: url('../img/team-tablet@2x.jpg');
+            }
+        }
     }
 }
 
 @media (min-width: 1200px) {
     .about-img {
+        background-image: url('../img/team-head.jpg');
         padding-top: 163px;
         padding-bottom: 158px;
         max-width: 100%;
@@ -58,6 +79,12 @@
             line-height: 117px;
             letter-spacing: 63px;
             max-width: 478px;
+        }
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            .about-img {
+                background-image: url('../img/team@2x.jpg');
+            }
         }
     }
 }

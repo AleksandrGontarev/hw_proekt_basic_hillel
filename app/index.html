@@ -11,11 +11,12 @@
     <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/Montserrat-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Montserrat-MediumItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-MediumItalic.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
     <title>Proect</title>
 </head>
 
-<body class="body"> 
+<body class="body">
     <div class="gradient">
         <div class="container">
             <header class="header">
@@ -27,7 +28,7 @@
                     </ul>
                     <p class="header-top__address">Kyiv, Mechnikova str., 14/1</p>
                     <a class="header-top__tel" href="tel:+380800211927">0800 211 927</a>
-                    <a class="header-top__icon-fb" href="#">
+                    <a class="header-top__icon-fb" href="#" aria-label="link fb">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="header-top__dark-fb"
                                 d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
@@ -36,13 +37,14 @@
                     </a>
                 </div>
                 <div class="header-logo header-logo--dark-theme">
-                    <a class="header-logo__icon" href="index.html">
+                    <a class="header-logo__icon" href="index.html" aria-label="link logo">
                         <img class="img-responsive" src="./img/logo-dark.svg" alt="logo" width="70" height="30">
                     </a>
                     <p class="header-logo__about">about us</p>
                 </div>
                 <div class="header-menu header-menu--dark-theme">
-                    <button class="header-menu__mobile-menu-btn header-menu__mobile-menu-btn--dark" type="button"></button> <!-- .active-btn-dark -->
+                    <button class="header-menu__mobile-menu-btn header-menu__mobile-menu-btn--dark"
+                        type="button"></button> <!-- .active-btn-dark -->
                     <ul class="header-menu__mobile-menu-list">
                         <li><a class="header-menu__list-item" href="./about.html">about us</a></li>
                         <li><a class="header-menu__list-item" href="#">services</a></li>
@@ -172,7 +174,11 @@
         <div class="container">
             <section class="team">
                 <div class="team__body team__body-active">
-                    <img class="team__img img-responsive" src="./img/man-with-glass.png" alt="man-with-glass">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/man-inglass-head.jpg 1x, ./img/man-inglass-head@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="./img/man-inglass-tablet.jpg 1x, ./img/man-inglass-tablet@2x.jpg 2x">
+                        <img class="team__img img-responsive" src="./img/man-inglass-mobile.jpg"  srcset="./img/man-inglass-mobile@2x.jpg" alt="man-with-glass">
+                    </picture>
                     <div class="team__team-container">
                         <a class="team__link" href="./team.html">команда</a>
                         <h3 class="team__header">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
@@ -183,7 +189,11 @@
                     </div>
                 </div>
                 <div class="team__body">
-                    <img class="team__img img-responsive" src="./img/man-with-glass.png" alt="man-with-glass">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/man-inglass-head.jpg 1x, ./img/man-inglass-head@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="./img/man-inglass-tablet.jpg 1x, ./img/man-inglass-tablet@2x.jpg 2x">
+                        <img class="team__img img-responsive" src="./img/man-inglass-mobile.jpg"  srcset="./img/man-inglass-mobile@2x.jpg" alt="man-with-glass">
+                    </picture>
                     <div class="team__team-container">
                         <a class="team__link" href="#">команда</a>
                         <h3 class="team__header">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
@@ -194,7 +204,11 @@
                     </div>
                 </div>
                 <div class="team__body">
-                    <img class="team__img img-responsive" src="./img/man-with-glass.png" alt="man-with-glass">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/man-inglass-head.jpg 1x, ./img/man-inglass-head@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="./img/man-inglass-tablet.jpg 1x, ./img/man-inglass-tablet@2x.jpg 2x">
+                        <img class="team__img img-responsive" src="./img/man-inglass-mobile.jpg"  srcset="./img/man-inglass-mobile@2x.jpg" alt="man-with-glass">
+                    </picture>
                     <div class="team__team-container">
                         <a class="team__link" href="#">команда</a>
                         <h3 class="team__header">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
@@ -266,7 +280,7 @@
                     <h2 class="publications__header">We have something to tell</h2>
                     <div class="publications__cards">
                         <div class="publications__card publications__card--equity">
-                            <img class="publications__pic img-responsive" src="./img/equity-pic.png" alt="equity-pic"
+                            <img class="publications__pic img-responsive" src="./img/equity-pic.png" srcset="./img/equity@2x.png" alt="equity-pic"
                                 width="315" height="200">
                             <div class="publications__body ">
                                 <a class="publications__item-link" href="#">Equity associate</a>
@@ -278,7 +292,7 @@
                             </div>
                         </div>
                         <div class="publications__card publications__card--penalty">
-                            <img class="publications__pic img-responsive" src="./img/penalty-pic.png" alt="penalty-pic"
+                            <img class="publications__pic img-responsive" src="./img/penalty-pic.png" srcset=".img/penalty@2x.png" alt="penalty-pic"
                                 width="315" height="200">
                             <div class="publications__body">
                                 <a class="publications__item-link" href="#">
@@ -296,7 +310,7 @@
                             </div>
                         </div>
                         <div class="publications__card publications__card--millenial">
-                            <img class="publications__pic img-responsive" src="./img/millenial-pic.png"
+                            <img class="publications__pic img-responsive" src="./img/millenial-pic.png" srcset="./img/millennial@2x.png"
                                 alt="millenial-pic" width="315" height="200">
                             <div class="publications__body">
                                 <a class="publications__item-link" href="#">
@@ -317,13 +331,13 @@
     </div>
 
     <footer class="footer container">
-       
+
         <div class="footer__top">
             <p class="footer__top-adr">Kyiv, Mechnikova str., 14/1</p>
             <a class="footer__map" href="#">On map</a>
         </div>
         <div class="footer__midle">
-            <a class="footer__fb" href="#">
+            <a class="footer__fb" href="#" aria-label="link fb">
                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
@@ -336,8 +350,8 @@
         <p class="footer__btn">© 2021 HLEGAL Law company, LLC</p>
 
     </footer>
-    
-<script src="./js/scriptdark.js"></script>
+
+    <script src="./js/scriptdark.js"></script>
 </body>
 
 </html>
