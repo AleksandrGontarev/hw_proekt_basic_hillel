@@ -1,5 +1,5 @@
 .footer {
-    background-color: $colorBg;
+    background: $colorBg;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -160,8 +160,8 @@
 
 @media (min-width: 1200px) {
     .footer {
-        padding: 30px 60px 0 60px;
-        max-width: 100%;
+        padding: 30px 15px;
+        
 
         &__btn {
             padding-left: 0px;
