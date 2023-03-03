@@ -18,3 +18,11 @@ $('.slick').slick({
     arrows: false,
     speed: 700,
   });
+
+  $('.slick_02').slick({
+    dots: true,
+    arrows: false,
+    speed: 700,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
