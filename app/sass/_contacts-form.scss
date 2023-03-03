@@ -95,11 +95,11 @@
         text-align: center;
         color: #FFFFFF;
         cursor: pointer;
+        transition-duration: 700ms;
     }
 
     &__text--button:hover {
         background-color: $colorHover;
-        ;
     }
 
     &__text--button:active {

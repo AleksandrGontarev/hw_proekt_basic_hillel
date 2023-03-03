@@ -19,21 +19,21 @@
         color: $colorMainAlt;
         display: inline-flex;
         padding-bottom: 15px;
+        transition-duration: 700ms;
     }
 
     &__tel:hover {
         color: $colorAccent;
-        transition-duration: 700ms;
         cursor: pointer;
     }
 
     &__email {
         color: $colorRegular;
+        transition-duration: 700ms;
     }
 
     &__email:hover {
         color: $colorAccent;
-        transition-duration: 700ms;
         cursor: pointer;
     }
 
@@ -49,11 +49,11 @@
         align-items: center;
         padding-bottom: 30px;
         cursor: pointer;
+        transition-duration: 700ms;
     }
 
     &__fb:hover {
         color: $colorAccent;
-        transition-duration: 700ms;
     }
 
     &__fb::before {
@@ -66,6 +66,5 @@
 
     &__fb:hover::before {
         background-image: url(../img/fb-hover.svg);
-        transition-duration: 700ms;
     }
 }
