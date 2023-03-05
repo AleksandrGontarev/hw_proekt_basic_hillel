@@ -8,8 +8,6 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $colorRegular;
-        display: inline-flex;
-        padding-bottom: 10px;
         transition-duration: 700ms;
     }
 
@@ -21,9 +19,10 @@
     &__head-link::after {
         content: '';
         background-image: url(../img/arrow.svg);
-        background-position: center center;
+        background-position: center;
         padding-left: 10px;
         transition-duration: 700ms;
+        background-repeat: no-repeat;
     }
 
     &__head-link:hover::after {

@@ -4,6 +4,13 @@
 }
 
 .publications {
+
+    &--service-entry {
+        text-align: start;
+        border-radius: 12px 12px 0px 0px;
+        margin-top: 80px;
+    }
+
     padding: 30px 15px 0 15px;
     text-align: center;
 

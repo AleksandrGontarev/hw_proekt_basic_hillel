@@ -1,0 +1,32 @@
+.gradient-no-img {
+    background-size: 0, cover;
+}
+
+.header-logo--dark-theme {
+    p {
+        display: flex;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        align-items: center;
+    }
+}
+
+.services__hider {
+    padding-top: 15px;
+}
+
+@media (min-width:768px) {
+
+    .services__hider {
+        padding-top: 0;
+    }
+
+    .header-logo--dark-theme {
+        p {
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+}
