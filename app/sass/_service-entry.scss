@@ -1,7 +1,20 @@
+.publications::after {
+    display: none;
+}
+
 .service-entry {
     &__top {
         text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+
+        &-text {
+            padding-bottom: 0;
+        }
     }
+
     &__top-header {
         font-weight: 700;
         font-size: 30px;
@@ -13,6 +26,7 @@
         background-clip: text;
         text-fill-color: transparent;
         color: $colorWhite;
+        padding-bottom: 8px;
     }
 
     &__top-text {
@@ -21,6 +35,7 @@
         line-height: 30px;
         text-align: center;
         color: $colorWhite;
+        padding-top: 20px;
     }
 
     &__top-button {
@@ -34,6 +49,25 @@
         box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
         border-radius: 12px;
         border: none;
+        margin-top: 28px;
+        margin-bottom: 30px;
+    }
+
+    &__top-button:hover {
+        background: $colorHover;
+    }
+
+    &__btn {
+        display: grid;
+        row-gap: 30px;
+    }
+
+    &__btn::before {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.5);
+        display: flex;
     }
 
     &__btn-header {
@@ -50,11 +84,22 @@
         color: $colorWhite;
         position: relative;
         margin-left: 14px;
+
     }
-&__btn-list {
-    list-style: none;
-    padding-left: 0;
-}
+
+    &__btn-text:not(:last-child) {
+        padding-bottom: 15px;
+    }
+
+    &__btn-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__btn-list:last-child {
+        padding-bottom: 60px;
+    }
+
     &__btn-text::before {
         content: '';
         display: inline-flex;
@@ -65,11 +110,57 @@
         top: 12px;
         left: -14px;
         position: absolute;
-        
+    }
+
+
+    &__pic {
+        width: 92px;
+        height: 92px;
+        background-color: $colorWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 28px;
+        border-radius: 24px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .service-entry {
+        &__top-header {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &__btn {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: min-content min-content;
+            column-gap: 60px;
+        }
+
+        &__btn::before {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        } 
+
+        &__btn-header {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+        }
+
+        &__btn-list {
+            &--01 {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+            }
+            &--02 {
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+            }
+        }
+
+
+
     }
 }
-
-.publications::after {
-    display: none;
-}
-
