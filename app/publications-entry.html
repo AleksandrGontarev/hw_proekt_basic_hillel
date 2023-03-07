@@ -17,54 +17,148 @@
 </head>
 
 <body class="body">
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <ul class="header-top__lang">
+                    <li><a href="#">УК</a></li>
+                    <li><a href="#">PL</a></li>
+                    <li><a class="active" href="#">EN</a></li>
+                </ul>
+                <p class="header-top__address">Kyiv, Mechnikova str., 14/1</p>
+                <a class="header-top__tel" href="tel:+380800211927">0800 211 927</a>
+                <a class="header-top__icon-fb" href="#" aria-label="link fb">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                            fill="#B3B3BA" />
+                    </svg>
+                </a>
+            </div>
+            <div class="header-logo">
+                <a class="header-logo__icon" href="index.html" aria-label="link logo">
+                    <img src="./img/logo.svg" alt="logo" width="70" height="30">
+                </a>
+                <p class="header-logo__about">publications</p>
+            </div>
+            <div class="header-menu">
+                <button class="header-menu__mobile-menu-btn" type="button"></button> <!-- .active-btn -->
+                <ul class="header-menu__mobile-menu-list">
+                    <li><a class="header-menu__list-item" href="./about.html">about us</a></li>
+                    <li><a class="header-menu__list-item" href="./services.html">services</a></li>
+                    <li><a class="header-menu__list-item" href="./team.html">team</a></li>
+                    <li><a class="header-menu__list-item list-item-active" href="./publications.html">publications</a>
+                    </li>
+                    <li><a class="header-menu__list-item" href="./contact.html">contact</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
 
+
+
+    <div class="main">
         <div class="container">
-            <div class="container">
-                <header class="header">
-                    <div class="header-top">
-                        <ul class="header-top__lang">
-                            <li><a href="#">УК</a></li>
-                            <li><a href="#">PL</a></li>
-                            <li><a class="active" href="#">EN</a></li>
-                        </ul>
-                        <p class="header-top__address">Kyiv, Mechnikova str., 14/1</p>
-                        <a class="header-top__tel" href="tel:+380800211927">0800 211 927</a>
-                        <a class="header-top__icon-fb" href="#" aria-label="link fb">
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
-                                    fill="#B3B3BA" />
-                            </svg>
-                        </a>
+            <section class="publications-entry">
+                <article class="publications-entry__top">
+                    <div class="publications-entry__img">
+                        <img class="publications-entry__pic" src="./img/penalty-pic.png" srcset="./img/penalty@2x.png"
+                            alt="penalty-pic" width="315" height="300">
                     </div>
-                    <div class="header-logo">
-                        <a class="header-logo__icon" href="index.html" aria-label="link logo">
-                            <img class="img-responsive" src="./img/logo.svg" alt="logo" width="70" height="30">
-                        </a>
-                        <p class="header-logo__about">publications</p>
-                    </div>
-                    <div class="header-menu">
-                        <button class="header-menu__mobile-menu-btn" type="button"></button> <!-- .active-btn -->
-                        <ul class="header-menu__mobile-menu-list">
-                            <li><a class="header-menu__list-item" href="./about.html">about us</a></li>
-                            <li><a class="header-menu__list-item" href="./services.html">services</a></li>
-                            <li><a class="header-menu__list-item" href="./team.html">team</a></li>
-                            <li><a class="header-menu__list-item list-item-active"
-                                    href="./publications.html">publications</a></li>
-                            <li><a class="header-menu__list-item" href="./contact.html">contact</a></li>
-                        </ul>
-                    </div>
-                </header>
-            </div>
-        
-        
+                    <h2 class="publications-entry__header-top">Penalty for the Good Corporation: what will happen to
+                        Google and others for violating the GDPR</h2>
+                    <p class="publications-entry__adr">September 29</p>
+                    <p class="publications-entry__text">On January 21, the French National Data Protection
+                        Commission (CNIL) announced on its website
+                        that it had fined Google for violating the EU's General Data Protection Regulation (GDPR).
+                        It took six months for the EU countries to make a quality level-up in the amount of fines
+                        for non-compliance with this standard. Prior to that, the fine was mainly € 20,000-30,000,
+                        with the largest fine amounting to € 400,000 and related to a hospital in Portugal. But this
+                        precedent is interesting not so much the amount of the fine as the rigidity of the
+                        regulator's approaches. Denis Beregovyi, Axon Partners, explains why, especially for Mind.
+                    </p>
+                    <p class="publications-entry__text">For what? The group complaints against Google arrived at
+                        CNIL on the same day that the GDPR
+                        came into force. The complainants reported that Google processed users' personal data
+                        without due cause, in particular to create personalized advertising offers.</p>
 
-            <div class="main">
-                
-            </div>
+                    <p class="publications-entry__text-bold">To the attention of Ukrainian security officers: the
+                        inspection was conducted online, without searches, without seizure of servers or other
+                        visible interference for business. And so it was possible.</p>
+                </article>
+                <article class="publications-entry__middle">
+                    <h2 class="publications-entry__header-middle">According to the results of CNIL inspections
+                        revealed violations of two requirements of the
+                        GDPR:</h2>
+                    <ol class="publications-entry__list">
+                        <li class="publications-entry__text-list">Transparency and awareness of users about the
+                            processing of personal data.</li>
+                        <li class="publications-entry__text-list">Lack of proper user consent for the processing of
+                            personal data for the purpose of
+                            personalizing advertising.</li>
+                    </ol>
+                    <p class="publications-entry__text">In the case of personalization of advertising, Google was
+                        sure to obtain the consent of
+                        users, because, firstly, when creating Google accounts, the user agrees to the Privacy
+                        Policy, and secondly, Google has a section "Ads personalization", where you can disable this
+                        feature.</p>
+                    <div class="publications-entry__img-middle">
+                        <img class="publications-entry__pic img-responsive" src="./img/illustration.png"
+                            srcset="./img/illustration@2x.png" alt="illustration" width="315" height="195">
+                    </div>
+                    <p class="publications-entry__text-after-img">This is what the ad personalization settings
+                        window in your Google Account looks like</p>
+                    <p class="publications-entry__text">However, CNIL does not think so, because the information
+                        about the personalization of
+                        advertising is not clear enough to users. As an example, the Commission claims that the
+                        relevant "Personalization" window does not contain information on the full range of Google
+                        services that collect and process personal data for this purpose ((YouTube, Google search,
+                        Play Store, Google pictures, Gmail, etc.). ), and therefore, the user cannot realize to what
+                        extent the data is used and how exactly they can be combined.</p>
+                </article>
+                <article class="publications-entry__btn">
+                    <h2 class="publications-entry__header-btn">So, let's walk through the text of the CNIL
+                        decision</h2>
+                    <p class="publications-entry__text">Why France and not Ireland. Google operates in Europe
+                        through a legal entity in Ireland. But
+                        the case was not initiated by the Irish, but by the French regulator. This is why it
+                        happened.</p>
+                    <p class="publications-entry__text">If data processing decisions are taken anywhere outside the
+                        EU, there is a one-stop mechanism
+                        - where the complaint is received, the body considers it. Because Google's data processing
+                        center is located in the United States and the complaint was first received in France, CNIL
+                        considered it.</p>
+                </article>
+                <article class="publications-entry__social-network">
+                    <a class="publications-entry__social-network-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.6755 0.890625H1.3245C0.5925 0.890625 0 1.48313 0 2.21513V23.5661C0 24.2981 0.5925 24.8906 1.3245 24.8906H12.819V15.5966H9.69V11.9756H12.819V9.30112C12.819 6.20212 14.712 4.51613 17.478 4.51613C18.8025 4.51613 19.941 4.61212 20.2725 4.65712V7.89713H18.3525C16.8525 7.89713 16.56 8.61712 16.56 9.66712V11.9771H20.145L19.68 15.6071H16.56V24.8906H22.6755C23.4075 24.8906 24 24.2981 24 23.5661V2.21513C24 1.48313 23.4075 0.890625 22.6755 0.890625Z"
+                                fill="#435695" />
+                        </svg>
+                    </a>
+                    <a class="publications-entry__social-network-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.99997 18.832L7.49997 14.332L24 2.33203L0.932967 11.203C0.932967 11.203 -0.0750331 11.548 0.00446695 12.1855C0.0839669 12.823 0.907467 13.114 0.907467 13.114L6.26997 14.9185L8.69997 22.6495L12.813 19.033L12.8025 19.0255L18.213 23.1745C19.6725 23.812 20.2035 22.4845 20.2035 22.4845L24 2.33203L8.99997 18.832Z"
+                                fill="#3CACDC" />
+                        </svg>
+                    </a>
+                    <a class="publications-entry__social-network-item">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.6 9.89062H7.2V21.2906H3.6V9.89062ZM5.4 4.19063C6.6 4.19063 7.5 5.09062 7.5 6.29062C7.35 7.34062 6.45 8.39062 5.4 8.39062C4.2 8.39062 3.3 7.34062 3.3 6.29062C3.3 5.09062 4.2 4.19063 5.4 4.19063ZM9.3 9.89062H12.75V11.3906C13.5 10.1906 14.85 9.59063 16.2 9.59063C19.8 9.59063 20.4 11.9906 20.4 14.9906V21.2906H16.8V15.7406C16.8 14.3906 16.8 12.7406 15 12.7406C13.2 12.7406 12.9 14.2406 12.9 15.7406V21.4406H9.3V9.89062ZM19.5 0.890625H4.5C1.5 0.890625 0 2.39062 0 5.39062V20.3906C0 23.3906 1.5 24.8906 4.5 24.8906H19.5C22.5 24.8906 24 23.3906 24 20.3906V5.39062C24 2.39062 22.5 0.890625 19.5 0.890625Z"
+                                fill="#1178B3" />
+                        </svg>
+                    </a>
+
+                </article>
+            </section>
         </div>
+    </div>
+    </div>
 
-    <section class="publications publications--service-entry">
+    <section class="publications publications--service-entry publications--public-entry">
         <div class="container">
             <div class="publications__container publications__container--service-entry">
                 <a class="publications__link" href="./publications.html">Publications</a>
