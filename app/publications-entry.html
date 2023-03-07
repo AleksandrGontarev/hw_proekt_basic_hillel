@@ -62,8 +62,8 @@
             <section class="publications-entry">
                 <article class="publications-entry__top">
                     <div class="publications-entry__img">
-                        <img class="publications-entry__pic" src="./img/penalty-pic.png" srcset="./img/penalty@2x.png"
-                            alt="penalty-pic" width="315" height="300">
+                        <img class="publications-entry__pic publications-entry__pic--top" src="./img/penalty-pic.png"
+                            srcset="./img/penalty@2x.png" alt="penalty-pic" width="315" height="300">
                     </div>
                     <h2 class="publications-entry__header-top">Penalty for the Good Corporation: what will happen to
                         Google and others for violating the GDPR</h2>
@@ -103,8 +103,9 @@
                         Policy, and secondly, Google has a section "Ads personalization", where you can disable this
                         feature.</p>
                     <div class="publications-entry__img-middle">
-                        <img class="publications-entry__pic img-responsive" src="./img/illustration.png"
-                            srcset="./img/illustration@2x.png" alt="illustration" width="315" height="195">
+                        <img class="publications-entry__pic publications-entry__pic--middle img-responsive"
+                            src="./img/illustration.png" srcset="./img/illustration@2x.png" alt="illustration"
+                            width="315" height="195">
                     </div>
                     <p class="publications-entry__text-after-img">This is what the ad personalization settings
                         window in your Google Account looks like</p>
@@ -130,21 +131,21 @@
                         considered it.</p>
                 </article>
                 <article class="publications-entry__social-network">
-                    <a class="publications-entry__social-network-item">
+                    <a class="publications-entry__social-network-item" href="#">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M22.6755 0.890625H1.3245C0.5925 0.890625 0 1.48313 0 2.21513V23.5661C0 24.2981 0.5925 24.8906 1.3245 24.8906H12.819V15.5966H9.69V11.9756H12.819V9.30112C12.819 6.20212 14.712 4.51613 17.478 4.51613C18.8025 4.51613 19.941 4.61212 20.2725 4.65712V7.89713H18.3525C16.8525 7.89713 16.56 8.61712 16.56 9.66712V11.9771H20.145L19.68 15.6071H16.56V24.8906H22.6755C23.4075 24.8906 24 24.2981 24 23.5661V2.21513C24 1.48313 23.4075 0.890625 22.6755 0.890625Z"
                                 fill="#435695" />
                         </svg>
                     </a>
-                    <a class="publications-entry__social-network-item">
+                    <a class="publications-entry__social-network-item" href="#">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8.99997 18.832L7.49997 14.332L24 2.33203L0.932967 11.203C0.932967 11.203 -0.0750331 11.548 0.00446695 12.1855C0.0839669 12.823 0.907467 13.114 0.907467 13.114L6.26997 14.9185L8.69997 22.6495L12.813 19.033L12.8025 19.0255L18.213 23.1745C19.6725 23.812 20.2035 22.4845 20.2035 22.4845L24 2.33203L8.99997 18.832Z"
                                 fill="#3CACDC" />
                         </svg>
                     </a>
-                    <a class="publications-entry__social-network-item">
+                    <a class="publications-entry__social-network-item" href="#">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M3.6 9.89062H7.2V21.2906H3.6V9.89062ZM5.4 4.19063C6.6 4.19063 7.5 5.09062 7.5 6.29062C7.35 7.34062 6.45 8.39062 5.4 8.39062C4.2 8.39062 3.3 7.34062 3.3 6.29062C3.3 5.09062 4.2 4.19063 5.4 4.19063ZM9.3 9.89062H12.75V11.3906C13.5 10.1906 14.85 9.59063 16.2 9.59063C19.8 9.59063 20.4 11.9906 20.4 14.9906V21.2906H16.8V15.7406C16.8 14.3906 16.8 12.7406 15 12.7406C13.2 12.7406 12.9 14.2406 12.9 15.7406V21.4406H9.3V9.89062ZM19.5 0.890625H4.5C1.5 0.890625 0 2.39062 0 5.39062V20.3906C0 23.3906 1.5 24.8906 4.5 24.8906H19.5C22.5 24.8906 24 23.3906 24 20.3906V5.39062C24 2.39062 22.5 0.890625 19.5 0.890625Z"
@@ -218,25 +219,29 @@
             </div>
         </div>
     </section>
-    </div>
 
-    <footer class="footer container">
-        <div class="footer__top">
-            <p class="footer__top-adr">Kyiv, Mechnikova str., 14/1</p>
-            <a class="footer__map" href="#">On map</a>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__body">
+                <div class="footer__top">
+                    <p class="footer__top-adr">Kyiv, Mechnikova str., 14/1</p>
+                    <a class="footer__map" href="#">On map</a>
+                </div>
+                <div class="footer__midle">
+                    <a class="footer__fb" href="#" aria-label="link fb">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                                fill="#24A3FF" />
+                        </svg>
+                    </a>
+                    <a class="footer__tel" href="tel:+380800211927">0800 211 927</a>
+                    <a class="footer__mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+                </div>
+                <p class="footer__btn">© 2021 HLEGAL Law company, LLC</p>
+            </div>
         </div>
-        <div class="footer__midle">
-            <a class="footer__fb" href="#" aria-label="link fb">
-                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
-                        fill="#24A3FF" />
-                </svg>
-            </a>
-            <a class="footer__tel" href="tel:+380800211927">0800 211 927</a>
-            <a class="footer__mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
-        </div>
-        <p class="footer__btn">© 2021 HLEGAL Law company, LLC</p>
     </footer>
 
     <script src="./js/all.js"></script>

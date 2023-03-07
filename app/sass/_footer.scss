@@ -1,16 +1,18 @@
 .footer {
     background: $colorBg;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 30px;
-    grid-template-rows: repeat(3, min-content);
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px;
+        grid-template-rows: repeat(3, min-content);
+
+    }
 
     &__top,
     &__midle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        justify-items: center;
     }
 
     a {
@@ -54,7 +56,7 @@
 
     &__fb {
         margin-bottom: 7px;
-      }
+    }
 
     &__fb:hover path {
         fill: $colorAccent;
@@ -85,22 +87,26 @@
 
 @media (min-width: 768px) {
     .footer {
-        justify-items: flex-start;
-
-        padding: 30px 60px;
-
+        &__container {
+            display: flex;
+            justify-content: center;
+        }
 
         &__top,
         &__midle {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 440px;
+            justify-items: flex-start;
+        }
+
+        &__top {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__midle {
+            grid-template-columns: min-content 1fr 2fr;
         }
 
         &__midle>a {
-            margin: 0 auto;
+            margin: 0;
             padding-bottom: 30px;
         }
 
@@ -109,6 +115,7 @@
         &__mail {
             display: flex;
             align-items: center;
+            text-align: center;
         }
 
         &__map::before,
@@ -131,26 +138,37 @@
 
 @media (min-width: 1024px) {
     .footer {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, min-content);
-        padding: 30px 60px;
-        max-width: 100%;
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        &__body {
+            grid-template-columns: 450px 1fr;
+            grid-template-rows: repeat(2, min-content);
+            padding: 30px 45px;
+            max-width: 100%;
+        }
 
         &__top {
+            grid-template-columns: auto 1fr;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
         }
 
         &__midle {
+            grid-template-columns: min-content 1fr 2fr;
             grid-column: 1 / 2;
             grid-row: 2 / 3;
         }
 
         &__btn {
             padding-left: 43px;
-            justify-self: flex-end;
             grid-column: 2 / 3;
             grid-row: 1 / 2;
+            display: flex;
+            justify-content: flex-end;
+
             &--dt-hd {
                 padding-right: 30px;
             }
@@ -160,8 +178,16 @@
 
 @media (min-width: 1200px) {
     .footer {
-        padding: 30px;
-        
+        &__body {
+            padding: 30px 0;
+        }
+
+        &__top {}
+
+        &__midle {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
 
         &__btn {
             padding-left: 0px;
