@@ -5,6 +5,11 @@
     background-position: center top, center;
     background-size: 524px 600px, cover;
     position: relative;
+
+}
+
+.gradient-no-img {
+    background-size: 0, cover;
 }
 
 .gradient::after {
@@ -29,22 +34,34 @@
     background: $colorGradBf;
 }
 
-.gradient-no-img {
-    background-size: 0, cover;
-}
 
 @media (min-width: 768px) {
     .gradient {
         background-size: 894px 1024px, cover;
+
+        &-no-img {
+            background-size: 0, cover;
+        }
     }
 }
+
 @media (min-width: 1024px) {
     .gradient {
         background-size: 670px 768px, cover;
+
+        &-no-img {
+            background-size: 0, cover;
+        }
+
     }
 }
+
 @media (min-width: 1200px) {
     .gradient {
         background-size: 697px 799px, cover;
+
+        &-no-img {
+            background-size: 0, cover;
+        }
     }
 }
