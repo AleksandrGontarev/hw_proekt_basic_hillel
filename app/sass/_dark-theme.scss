@@ -29,6 +29,9 @@
     background: $colorGradBf;
 }
 
+.gradient-no-img {
+    background-size: 0, cover;
+}
 
 @media (min-width: 768px) {
     .gradient {
