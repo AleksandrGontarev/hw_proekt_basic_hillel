@@ -1,7 +1,7 @@
 .about-img {
     padding: 35px;
     background-color: #4E4D79;
-    background-image: url('../img/team-mobile.jpg');
+    background-image: url('../img/about/team-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -23,14 +23,14 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .about-img {
-        background-image: url('../img/team-mobile@2x.jpg');
+        background-image: url('../img/about/team-mobile@2x.jpg');
     }
 }
 
 @media (min-width: 768px) {
     .about-img {
         padding: 89px 0;
-        background-image: url('../img/team-tablet.jpg');
+        background-image: url('../img/about/team-tablet.jpg');
 
         &__text {
             font-size: 46px;
@@ -41,7 +41,7 @@
 
         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
             .about-img {
-                background-image: url('../img/team-tablet@2x.jpg');
+                background-image: url('../img/about/team-tablet@2x.jpg');
             }
         }
     }
@@ -49,7 +49,7 @@
 
 @media (min-width: 1024px) {
     .about-img {
-        background-image: url('../img/team-tablet.jpg');
+        background-image: url('../img/about/team-tablet.jpg');
         padding: 103px 0;
 
         &__text {
@@ -61,7 +61,7 @@
 
         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
             .about-img {
-                background-image: url('../img/team-tablet@2x.jpg');
+                background-image: url('../img/about/team-tablet@2x.jpg');
             }
         }
     }
@@ -69,7 +69,7 @@
 
 @media (min-width: 1200px) {
     .about-img {
-        background-image: url('../img/team-head.jpg');
+        background-image: url('../img/about/team-head.jpg');
         padding-top: 163px;
         padding-bottom: 158px;
         max-width: 100%;

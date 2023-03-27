@@ -1320,7 +1320,7 @@ a {
 .about-img {
   padding: 35px;
   background-color: #4E4D79;
-  background-image: url("../img/team-mobile.jpg");
+  background-image: url("../img/about/team-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -1341,13 +1341,13 @@ a {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .about-img {
-    background-image: url("../img/team-mobile@2x.jpg");
+    background-image: url("../img/about/team-mobile@2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .about-img {
     padding: 89px 0;
-    background-image: url("../img/team-tablet.jpg");
+    background-image: url("../img/about/team-tablet.jpg");
   }
   .about-img__text {
     font-size: 46px;
@@ -1358,12 +1358,12 @@ a {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .about-img .about-img {
-    background-image: url("../img/team-tablet@2x.jpg");
+    background-image: url("../img/about/team-tablet@2x.jpg");
   }
 }
 @media (min-width: 1024px) {
   .about-img {
-    background-image: url("../img/team-tablet.jpg");
+    background-image: url("../img/about/team-tablet.jpg");
     padding: 103px 0;
   }
   .about-img__text {
@@ -1375,12 +1375,12 @@ a {
 }
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .about-img .about-img {
-    background-image: url("../img/team-tablet@2x.jpg");
+    background-image: url("../img/about/team-tablet@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
   .about-img {
-    background-image: url("../img/team-head.jpg");
+    background-image: url("../img/about/team-head.jpg");
     padding-top: 163px;
     padding-bottom: 158px;
     max-width: 100%;
@@ -2389,7 +2389,7 @@ a {
   background-color: #F5F5FA;
   border-radius: 50%;
   border: none;
-  background-image: url(../img/team-link.svg);
+  background-image: url(../img/about/team-link.svg);
   background-repeat: no-repeat;
   background-position: center center;
   grid-column: 2/3;
@@ -2399,7 +2399,7 @@ a {
           transition-duration: 700ms;
 }
 .team-page__btn:hover {
-  background-image: url(../img/team-link-hover.svg);
+  background-image: url(../img/about/team-link-hover.svg);
   background-color: #EDEDF7;
 }
 

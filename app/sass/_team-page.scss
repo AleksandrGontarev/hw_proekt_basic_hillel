@@ -54,7 +54,7 @@
         background-color: $colorBg;
         border-radius: 50%;
         border: none;
-        background-image: url(../img/team-link.svg);
+        background-image: url(../img/about/team-link.svg);
         background-repeat: no-repeat;
         background-position: center center;
         grid-column: 2 / 3;
@@ -64,7 +64,7 @@
     }
 
     &__btn:hover {
-        background-image: url(../img/team-link-hover.svg);
+        background-image: url(../img/about/team-link-hover.svg);
         background-color: $colorBgAlt;
     }
 
