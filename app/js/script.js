@@ -19,7 +19,7 @@ $('.slick').slick({
     speed: 700,
   });
 
-  $('.slick_02').slick({
+$('.slick_02').slick({
     dots: true,
     arrows: false,
     speed: 700,
